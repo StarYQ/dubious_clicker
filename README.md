@@ -26,7 +26,7 @@ python main.py
 
 Enter the URL in the terminal in response to the `"Enter URL"` prompt.  
 
-Make sure you've already clicked through the prompts for new visitors to the site, or else the clicking won't start.  
+Make sure you've already clicked through the prompt for new visitors to the site, or else the clicking won't work. You can also click through it during the 5 second window given before the clicking starts.
 
 To stop the automation, just terminate the program with:  
 ```sh
