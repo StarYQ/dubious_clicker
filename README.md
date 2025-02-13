@@ -1,4 +1,4 @@
-# 💀
+# why
 
 ## Instructions:
 
