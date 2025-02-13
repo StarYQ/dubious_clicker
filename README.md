@@ -1,4 +1,4 @@
-# Dubious Clicker Bot
+# 💀
 
 ## Instructions:
 
