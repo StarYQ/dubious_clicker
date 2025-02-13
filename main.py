@@ -4,10 +4,18 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+import platform
 
 def setup_driver():
     chrome_options = Options()
     chrome_options.debugger_address = "127.0.0.1:9222"
+    system = platform.system()
+    if system == "Darwin":  # macOS
+        chrome_options.binary_location = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+    elif system == "Windows":  # Windows
+        chrome_options.binary_location = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
+    elif system == "Linux":  # Linux
+        chrome_options.binary_location = "/usr/bin/google-chrome"
     driver = webdriver.Chrome(options=chrome_options)
     return driver
 
