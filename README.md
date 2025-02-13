@@ -32,3 +32,5 @@ To stop the automation, just terminate the program with:
 ```sh
 Ctrl+C
 ```
+
+At the end, don't forget to close the Chrome instance that was opened with remote debugging.
