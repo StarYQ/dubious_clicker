@@ -21,9 +21,7 @@ def setup_driver():
 
 def get_video_element(driver, video_selector):
     try:
-        video_element = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.CSS_SELECTOR, video_selector))
-        )
+        video_element = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, video_selector)))
         print("Video found")
         return video_element
     except Exception as e:
@@ -44,9 +42,7 @@ def click_video(driver, video_element, duration=5):
 
 def click_upgrades(driver, upgrade_selector, clicks=20, limit=5):
     try:
-        upgrade_elements = WebDriverWait(driver, 10).until(
-            EC.presence_of_all_elements_located((By.CSS_SELECTOR, upgrade_selector))
-        )
+        upgrade_elements = WebDriverWait(driver, 10).until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, upgrade_selector)))
         upgrade_buttons = upgrade_elements[:limit]
         for button in upgrade_buttons:
             for _ in range(clicks):
@@ -74,8 +70,8 @@ def main():
         return
     try:
         while True:
-            click_video(driver, video_element, duration=5)
-            click_upgrades(driver, upgrade_selector, clicks=20, limit=5)
+            click_video(driver, video_element, duration=1)
+            click_upgrades(driver, upgrade_selector, clicks=20, limit=1)
     except KeyboardInterrupt:
         print("Stopped")
     finally:
