@@ -9,6 +9,8 @@ For Windows, enter this command: "C:\Program Files\Google\Chrome\Application\chr
 
 For Linux, enter this command: google-chrome --remote-debugging-port=9222
 
+Enter the URL in the terminal in response to the "Enter URL" prompt.
+
 Make sure you've already clicked through the prompts for new visitors to the site, or else the clicking won't start.
 
 To stop the automation, just terminate the program with Ctrl+C.
