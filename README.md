@@ -1,6 +1,8 @@
 # dubious_clicker_bot
 Instructions:
+
 Close all Chrome instances and open your terminal. 
+
 For macOS, enter this command: /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222
 
 For Windows, enter this command: "C:\Program Files\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222
